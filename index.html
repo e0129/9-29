@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.crown{width: 80%; opacity: 0.3; margin-left: 130px;}
+		.crown:hover{opacity: 1}
+		.balloon{width:150px; position :absolute; top:550px; left: 30px; animation: mymove 15s infinite linear alternate;}
+		@keyframes mymove {from {top: 550px;}
+  						 	   to {top: 0px;}}
+  		.balloon2{width: 200px; position: absolute; top:550px; left:200px; animation: mymove 8s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.balloon3{width: 150px; position: absolute; top:550px; left:400px; animation: mymove 10s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.balloon4{width: 100px; position: absolute; top:550px; left:650px; animation: mymove 10s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.balloon5{width: 200px; position: absolute; top:550px; left:800px; animation: mymove 13s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.balloon6{width: 150px; position: absolute; top:550px; left:950px; animation: mymove 12s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.balloon7{width: 100px; position: absolute; top:550px; left:1120px; animation: mymove 13s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.balloon8{width: 150px; position: absolute; top:550px; left:530px; animation: mymove 8s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.balloon9{width: 100px; position: absolute; top:550px; left:300px; animation: mymove 9s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.balloon10{width: 200px; position: absolute; top:550px; left:700px; animation: mymove 12s infinite linear alternate;}
+		@keyframes mymove { from { top: 550px; }
+						to {top: 0px;}}
+		.kid{width:190px; top: 430px; position: absolute; margin:auto; left:30%; transition: all 20s;}
+
+	
+	</style>
+</head>
+<body>
+
+	<img src="it.gif" class="crown" id="c">
+		<audio src="christmas.wav" id="cs"></audio>
+
+	<img src="balloon.png" class="balloon" id="b">
+		<audio src="lol.mp3" id="bs"></audio>
+	<img src="balloon.png" class="balloon2" id="b2">
+		<audio src="lol.mp3" id="bs2"></audio>
+	<img src="balloon.png" class="balloon3" id="b3">
+		<audio src="lol.mp3" id="bs3"></audio>
+	<img src="balloon.png" class="balloon4" id="b4">
+		<audio src="lol.mp3" id="bs4"></audio>
+	<img src="balloon.png" class="balloon5" id="b5">
+		<audio src="lol.mp3" id="bs5"></audio>
+	<img src="balloon.png" class="balloon6" id="b6">
+		<audio src="lol.mp3" id="bs6"></audio>
+	<img src="balloon.png" class="balloon7" id="b7">
+		<audio src="lol.mp3" id="bs7"></audio>
+	<img src="balloon.png" class="balloon8" id="b8">
+		<audio src="lol.mp3" id="bs8"></audio>
+	<img src="balloon.png" class="balloon9" id="b9">
+		<audio src="lol.mp3" id="bs9"></audio>
+	<img src="balloon.png" class="balloon10" id="b10">
+		<audio src="lol.mp3" id="bs10"></audio>
+
+	<img src="kid.png" class="kid" id="k">
+		<audio src="ghost.wav" id="ks"></audio>
+
+	</div>
+
+	<script type="text/javascript">
+		var cstate = "off";
+		c.onclick = function(){
+			if(cstate == "off"){
+				c.style.opacity = "1";
+				document.body.style.background = "url(back.jpg)";
+				document.body.style.backgroundSize = "cover";
+				cs.play();
+				cstate = "on";
+			}else{
+				c.style.opacity = "0.3";
+				cs.pause();
+				cstate = "off";
+			}
+		}
+		
+		var bstate = "off";
+		b.onclick = function(){
+			if(bstate == "off"){
+			b.style.opacity = "1";
+			bs.play();
+			bstate = "on";
+		}else{
+			b.style.opacity = "0.3";
+			bs.pause();
+			bstate = "off";
+		}
+	}
+		var b2state = "off";
+		b2.onclick = function(){
+			if(b2state == "off"){
+			b2.style.opacity = "1";
+			bs2.play();
+			bs2state = "on";
+		}else{
+			b2.style.opacity = "0.3";
+			bs2.pause();
+			bs2state = "off";
+		}
+	}
+	var b3state = "off";
+		b3.onclick = function(){
+			if(b3state == "off"){
+			b3.style.opacity = "1";
+			bs3.play();
+			bsstate = "on";
+		}else{
+			b3.style.opacity = "0.3";
+			bs3.pause();
+			bs3state = "off";
+		}
+	}
+	var b4state = "off";
+		b4.onclick = function(){
+			if(b4state == "off"){
+			b4.style.opacity = "1";
+			bs4.play();
+			bs4state = "on";
+		}else{
+			b4.style.opacity = "0.3";
+			bs4.pause();
+			bs4state = "off";
+		}
+	}
+	var b5state = "off";
+		b5.onclick = function(){
+			if(b5state == "off"){
+			b5.style.opacity = "1";
+			bs5.play();
+			bs5state = "on";
+		}else{
+			b5.style.opacity = "0.3";
+			bs5.pause();
+			bs5state = "off";
+		}
+	}
+	var b6state = "off";
+		b6.onclick = function(){
+			if(b6state == "off"){
+			b6.style.opacity = "1";
+			bs6.play();
+			bs6state = "on";
+		}else{
+			b6.style.opacity = "0.3";
+			bs6.pause();
+			bs6state = "off";
+		}
+	}
+	var b7state = "off";
+		b7.onclick = function(){
+			if(b7state == "off"){
+			b7.style.opacity = "1";
+			bs7.play();
+			bs7state = "on";
+		}else{
+			b7.style.opacity = "0.3";
+			bs7.pause();
+			bs7state = "off";
+		}
+	}
+	var b8state = "off";
+		b8.onclick = function(){
+			if(b8state == "off"){
+			b8.style.opacity = "1";
+			bs8.play();
+			bsstate = "on";
+		}else{
+			b8.style.opacity = "0.3";
+			bs8.pause();
+			bs8state = "off";
+		}
+	}
+	var b9state = "off";
+		b9.onclick = function(){
+			if(b9state == "off"){
+			b9.style.opacity = "1";
+			bs9.play();
+			bs9state = "on";
+		}else{
+			b9.style.opacity = "0.3";
+			bs9.pause();
+			bs9state = "off";
+		}
+	}
+	var b10state = "off";
+		b10.onclick = function(){
+			if(b10state == "off"){
+			b10.style.opacity = "1";
+			bs10.play();
+			bs10state = "on";
+		}else{
+			b10.style.opacity = "0.3";
+			bs10.pause();
+			bs10state = "off";
+		}
+	}
+	var kstate = "off";
+		k.onclick = function(){
+			if(kstate == "off"){
+			k.style.opacity = "1";
+			ks.play();
+			ksstate = "on";
+		}else{
+			k.style.opacity = "0.3";
+			ks.pause();
+			ksstate = "off";
+		}
+	}
+	
+
+	</script>
+
+</body></html>
